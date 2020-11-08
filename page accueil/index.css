@@ -169,7 +169,7 @@ footer > ul > li > a:hover{
 		margin-left: 200px;
 		margin-top: 150px
 	}
-/*
+
 	h1{
 		animation-duration: 1s;
     	animation-name: arrived2;
@@ -180,35 +180,134 @@ footer > ul > li > a:hover{
 
 	@keyframes arrived2{
 		from{
-			margin-left: -100px;
-			margin-top: -400px;
+			margin-left: -900px;
+			letter-spacing: 0.8em;
 		}
 
 		to{
 			margin-left: 50px;
-			margin-top: 0px;
+			letter-spacing: ;
 		}
 	}
-*/
+
 	/*BTN*/
+
 	nav{
-		animation-duration: 1s;
+		animation-duration: 1.6s;
     	animation-name: arrived;
 		animation-timing-function: ease-out;
 		margin-left: 100px;
 		margin-top: 0px;
+		top : 250px;
 		position: absolute;
 	}
 
 	@keyframes arrived{
 		from{
-			margin-left: -100px;
-			margin-top: 400px;
+			margin-left: 800px;
+			letter-spacing: 1em;
 		}
 
 		to{
 			margin-left: 100px;
-			margin-top: 0px;
+			letter-spacing: ;
+		}
+	}
+
+	.google{
+		animation-name: rougegauche;
+		animation-duration: 1.6s;
+		animation-timing-function: ease-out;
+	}
+
+	@keyframes rougegauche{
+		from{
+			margin-left: 150px;
+		}
+
+		to{
+			margin-left: 0px;
+		}
+	}
+
+	.google2{
+		animation-name: jaunegauche;
+		animation-duration: 1.7s;
+		animation-timing-function: ease-out;
+	}
+
+	@keyframes jaunegauche{
+		from{
+			margin-left: 300px;
+		}
+
+		to{
+			margin-left: 0px;
+		}
+	}
+
+	.google3{
+		animation-name: vertgauche;
+		animation-duration: 1.8s;
+		animation-timing-function: ease-out;
+	}
+
+	@keyframes vertgauche{
+		from{
+			margin-left: 450px;
+		}
+
+		to{
+			margin-left: 0px;
+		}
+	}
+
+	.google4{
+		animation-name: orangegauche;
+		animation-duration: 1.9s;
+		animation-timing-function: ease-out;
+	}
+
+	@keyframes orangegauche{
+		from{
+			margin-left: 600px;
+		}
+
+		to{
+			margin-left: 0px;
+		}
+	}
+
+	.google5{
+		animation-name: violetgauche;
+		animation-duration: 2s;
+		animation-timing-function: ease-out;
+	}
+
+	@keyframes violetgauche{
+		from{
+			margin-left: 750px;
+		}
+
+		to{
+			margin-left: 0px;
+		}
+	}
+
+	.google6{
+		animation-name: aboutgauche;
+		animation-duration: 2.1s;
+		animation-timing-function: ease-out;
+		width: 500px;
+	}
+
+	@keyframes aboutgauche{
+		from{
+			margin-left: 900px;
+		}
+
+		to{
+			margin-left: 0px;
 		}
 	}
 	
