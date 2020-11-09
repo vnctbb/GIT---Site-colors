@@ -14,7 +14,13 @@ section{
 	margin-top: 75px;
 }
 
-/* TITLE */
+/* -----------------------------------------------------------
+--------------------------------------------------------------
+
+-------------------------------TITLE--------------------------
+
+--------------------------------------------------------------
+------------------------------------------------------------*/
 
 h1{
 	margin-left: 40px;
@@ -24,7 +30,13 @@ h1{
 	line-height: 75px;
 }
 
-/* MENU */
+/* -----------------------------------------------------------
+--------------------------------------------------------------
+
+-------------------------------MENU---------------------------
+
+--------------------------------------------------------------
+------------------------------------------------------------*/
 
 nav{
 	margin-top: 100px;
@@ -38,11 +50,6 @@ nav > ul{
 	
 }
 
-.conteneur-photo{
-	border-top: 1px solid black;
-	padding-top: 80px;
-}
-
 span{
 	box-shadow: 20px 20px 70px #e8e6e6;
 	height: 200px;
@@ -50,7 +57,27 @@ span{
 	width: 200px;
 }
 
-/* COLOR */
+.btnabout{
+	margin-bottom: 40px;
+}
+
+nav > ul > li > a{
+	font-size: 2em;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	display: flex;
+	flex-flow: column wrap;
+	margin-bottom: 20px;
+}
+
+/* -----------------------------------------------------------
+--------------------------------------------------------------
+
+-------------------------------COLOR--------------------------
+
+--------------------------------------------------------------
+------------------------------------------------------------*/
 
 .bleu{
 	color: #4287f5;
@@ -104,25 +131,13 @@ span{
 	color: #1d4851;
 }
 
-.btnabout{
-	margin-bottom: 40px;
-}
+/* -----------------------------------------------------------
+--------------------------------------------------------------
 
-nav > ul > li > a{
-	font-size: 2em;
-	font-weight: bold;
-	color: #000;
-	text-decoration: none;
-	display: flex;
-	flex-flow: column wrap;
-	margin-bottom: 20px;
-}
+-------------------------------FOOTER-------------------------
 
-nav > ul > li > a > span > img{
-	width: 300px;
-}
-
-/* FOOTER */
+--------------------------------------------------------------
+------------------------------------------------------------*/
 
 footer{
 	display: flex;
@@ -153,7 +168,13 @@ footer > ul > li > a:hover{
 	border-bottom: 1px solid #000;
 }
 
-/* VERSION TABLETTE */
+/* -----------------------------------------------------------
+--------------------------------------------------------------
+
+---------------------VERSION TABLETTE-------------------------
+
+--------------------------------------------------------------
+------------------------------------------------------------*/
 
 @media screen and (min-width: 500px){
 	section{
@@ -166,7 +187,13 @@ footer > ul > li > a:hover{
 	}
 }
 
-/*VERSION BUREAU*/
+/* -----------------------------------------------------------
+--------------------------------------------------------------
+
+---------------------VERSION BUREAU---------------------------
+
+--------------------------------------------------------------
+------------------------------------------------------------*/
 
 @media screen and (min-width: 980px){
 	section{
@@ -174,9 +201,26 @@ footer > ul > li > a:hover{
 		margin-top: 150px
 	}
 
-	/*BTN*/
+	h1{
+		animation-duration: 1.6s;
+    	animation-name: anim1;
+		animation-timing-function: ease-out;
+		margin-left: 50px;
+		position: absolute;
+	}
+
+	/*--------------------------
+	----------MENU-COLORS-------
+	--------------------------*/
+
 	nav{
+		animation-duration: 1.6s;
+    	animation-name: anim2;
+		animation-timing-function: ease-out;
+		margin-left: 100px;
 		margin-top: 0px;
+		top : 250px;
+		position: absolute;
 	}
 	
 	nav > ul{
@@ -188,11 +232,11 @@ footer > ul > li > a:hover{
 		line-height: 20px;
 	}
 
-	.btn a:hover span{
+	nav ul li a:hover span{
 		opacity: 1;
 	}
 
-	.btn a span{
+	nav li a span{
 		position: absolute;
 		top: 0px;
 		left: 400px;
@@ -202,21 +246,17 @@ footer > ul > li > a:hover{
 	}
 
 	span{
-		height: 70%;
-		margin: 60px 0px 0px 0px;
-		width: 60%;
+		height: 240%;
+		margin-left: -130px;
+		margin-top: -230px;
+		width: 260%;
 	}
 
-	/* IMG */
-
-	.voir{
-		width: initial;
-		height: 667px;
-		margin-left: -100px;
-	}
-
-	/*FOOTER*/
-	footer{
+					/*--------------------------
+					----------FOOTER------------
+					--------------------------*/
+	
+		footer{
 		position: relative;
 		flex-flow: row wrap;
 		justify-content: space-between;
@@ -244,14 +284,127 @@ footer > ul > li > a:hover{
 
 	/*TRANSITION*/
 
-	.d1{
+	nav ul li a{
+		font-size: 2.6em;
 		transition-property: font-size;
 		transition-duration: 0.5s;
 	}
 
-	.d1:hover{
+	nav ul li a:hover{
 		font-size: 3.5em;
 	}
+
+	/*--------------------------
+	----------ANIMATION---------
+	--------------------------*/
+
+	@keyframes anim1{
+		from{
+			margin-left: -900px;
+			letter-spacing: 0.8em;
+		}
+				
+		to{
+			margin-left: 50px;
+			letter-spacing: 0;
+		}
+	}
+
+		@keyframes anim2{
+		from{
+			margin-left: 800px;
+			letter-spacing: 1em;
+		}
+					
+		to{
+			margin-left: 100px;
+			letter-spacing: 0;
+		}
+	}
+					
+
+
+	.animeazur{
+		animation-name: azurgauche;
+		animation-duration: 1.6s;
+		animation-timing-function: ease-out;
+	}
+
+	@keyframes azurgauche{
+		from{
+			margin-left: 150px;
+		}
+
+		to{
+			margin-left: 0px;
+		}
+	}
+
+	.animebondi{
+		animation-name: bondigauche;
+		animation-duration: 1.7s;
+		animation-timing-function: ease-out;
+	}
+
+	@keyframes bondigauche{
+		from{
+			margin-left: 300px;
+		}
+
+		to{
+			margin-left: 0px;
+		}
+	}
+
+	.animeelectrique{
+		animation-name: electriquegauche;
+		animation-duration: 1.8s;
+		animation-timing-function: ease-out;
+	}
+
+	@keyframes electriquegauche{
+		from{
+			margin-left: 450px;
+		}
+
+		to{
+			margin-left: 0px;
+		}
+	}
+
+	.animepetrole{
+		animation-name: petrolegauche;
+		animation-duration: 1.9s;
+		animation-timing-function: ease-out;
+	}
+
+	@keyframes petrolegauche{
+		from{
+			margin-left: 600px;
+		}
+
+		to{
+			margin-left: 0px;
+		}
+	}
+
+	.animeegyptien{
+		animation-name: egyptiengauche;
+		animation-duration: 2s;
+		animation-timing-function: ease-out;
+	}
+
+	@keyframes egyptiengauche{
+		from{
+			margin-left: 750px;
+		}
+
+		to{
+			margin-left: 0px;
+		}
+	}
+
+	
 
 	
 }
