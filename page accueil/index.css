@@ -14,7 +14,15 @@ section{
 	margin-top: 75px;
 }
 
-/* TITLE */
+
+/* -----------------------------------------------------------
+--------------------------------------------------------------
+
+-------------------------------TITLE--------------------------
+
+--------------------------------------------------------------
+------------------------------------------------------------*/
+
 
 h1{
 	margin-left: 40px;
@@ -24,7 +32,13 @@ h1{
 	line-height: 75px;
 }
 
-/* MENU */
+/* -----------------------------------------------------------
+--------------------------------------------------------------
+
+-------------------------------MENU---------------------------
+
+--------------------------------------------------------------
+------------------------------------------------------------*/
 
 nav{
 	margin-top: 100px;
@@ -50,7 +64,31 @@ span{
 	width: 200px;
 }
 
-/* COLOR */
+.btnabout{
+	margin-bottom: 40px;
+}
+
+nav > ul > li > a{
+	font-size: 2em;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	display: flex;
+	flex-flow: column wrap;
+	margin-bottom: 20px;
+}
+
+nav > ul > li > a > span > img{
+	width: 300px;
+}
+
+/* -----------------------------------------------------------
+--------------------------------------------------------------
+
+-------------------------------COLOR--------------------------
+
+--------------------------------------------------------------
+------------------------------------------------------------*/
 
 .blue{
 	background-color: #4287f5;
@@ -100,25 +138,13 @@ span{
 	color: #490abf;
 }
 
-.btnabout{
-	margin-bottom: 40px;
-}
+/* -----------------------------------------------------------
+--------------------------------------------------------------
 
-nav > ul > li > a{
-	font-size: 2em;
-	font-weight: bold;
-	color: #000;
-	text-decoration: none;
-	display: flex;
-	flex-flow: column wrap;
-	margin-bottom: 20px;
-}
+-------------------------------FOOTER-------------------------
 
-nav > ul > li > a > span > img{
-	width: 300px;
-}
-
-/* FOOTER */
+--------------------------------------------------------------
+------------------------------------------------------------*/
 
 footer{
 	display: flex;
@@ -149,7 +175,13 @@ footer > ul > li > a:hover{
 	border-bottom: 1px solid #000;
 }
 
-/* VERSION TABLETTE */
+/* -----------------------------------------------------------
+--------------------------------------------------------------
+
+---------------------VERSION TABLETTE-------------------------
+
+--------------------------------------------------------------
+------------------------------------------------------------*/
 
 @media screen and (min-width: 500px){
 	section{
@@ -162,7 +194,13 @@ footer > ul > li > a:hover{
 	}
 }
 
-/*VERSION BUREAU*/
+/* -----------------------------------------------------------
+--------------------------------------------------------------
+
+---------------------VERSION BUREAU---------------------------
+
+--------------------------------------------------------------
+------------------------------------------------------------*/
 
 @media screen and (min-width: 980px){
 	section{
@@ -171,14 +209,14 @@ footer > ul > li > a:hover{
 	}
 
 	h1{
-		animation-duration: 1s;
-    	animation-name: arrived2;
+		animation-duration: 1.6s;
+    	animation-name: anim1;
 		animation-timing-function: ease-out;
 		margin-left: 50px;
 		position: absolute;
 	}
 
-	@keyframes arrived2{
+	@keyframes anim1{
 		from{
 			margin-left: -900px;
 			letter-spacing: 0.8em;
@@ -186,129 +224,22 @@ footer > ul > li > a:hover{
 
 		to{
 			margin-left: 50px;
-			letter-spacing: ;
+			letter-spacing: 0;
 		}
 	}
 
-	/*BTN*/
+						/*--------------------------
+						----------BTN---------------
+						--------------------------*/
 
 	nav{
 		animation-duration: 1.6s;
-    	animation-name: arrived;
+    	animation-name: anim2;
 		animation-timing-function: ease-out;
 		margin-left: 100px;
 		margin-top: 0px;
 		top : 250px;
 		position: absolute;
-	}
-
-	@keyframes arrived{
-		from{
-			margin-left: 800px;
-			letter-spacing: 1em;
-		}
-
-		to{
-			margin-left: 100px;
-			letter-spacing: ;
-		}
-	}
-
-	.google{
-		animation-name: rougegauche;
-		animation-duration: 1.6s;
-		animation-timing-function: ease-out;
-	}
-
-	@keyframes rougegauche{
-		from{
-			margin-left: 150px;
-		}
-
-		to{
-			margin-left: 0px;
-		}
-	}
-
-	.google2{
-		animation-name: jaunegauche;
-		animation-duration: 1.7s;
-		animation-timing-function: ease-out;
-	}
-
-	@keyframes jaunegauche{
-		from{
-			margin-left: 300px;
-		}
-
-		to{
-			margin-left: 0px;
-		}
-	}
-
-	.google3{
-		animation-name: vertgauche;
-		animation-duration: 1.8s;
-		animation-timing-function: ease-out;
-	}
-
-	@keyframes vertgauche{
-		from{
-			margin-left: 450px;
-		}
-
-		to{
-			margin-left: 0px;
-		}
-	}
-
-	.google4{
-		animation-name: orangegauche;
-		animation-duration: 1.9s;
-		animation-timing-function: ease-out;
-	}
-
-	@keyframes orangegauche{
-		from{
-			margin-left: 600px;
-		}
-
-		to{
-			margin-left: 0px;
-		}
-	}
-
-	.google5{
-		animation-name: violetgauche;
-		animation-duration: 2s;
-		animation-timing-function: ease-out;
-	}
-
-	@keyframes violetgauche{
-		from{
-			margin-left: 750px;
-		}
-
-		to{
-			margin-left: 0px;
-		}
-	}
-
-	.google6{
-		animation-name: aboutgauche;
-		animation-duration: 2.1s;
-		animation-timing-function: ease-out;
-		width: 500px;
-	}
-
-	@keyframes aboutgauche{
-		from{
-			margin-left: 900px;
-		}
-
-		to{
-			margin-left: 0px;
-		}
 	}
 	
 	nav > ul{
@@ -368,15 +299,10 @@ footer > ul > li > a:hover{
 		color: #490abf;
 	}
 
-	/* IMG */
-
-	.voir{
-		width: initial;
-		height: 667px;
-		margin-left: -100px;
-	}
-
-	/*FOOTER*/
+						/*--------------------------
+						----------FOOTER------------
+						--------------------------*/	
+	
 	footer{
 		position: relative;
 		flex-flow: row wrap;
@@ -403,16 +329,134 @@ footer > ul > li > a:hover{
 		flex-grow: 1;
 	}
 
-	/*TRANSITION*/
+						/*--------------------------
+						----------TRANSITION--------
+						--------------------------*/
 
-	.d1{
+	.fortransition li a{
 		transition-property: font-size;
 		transition-duration: 0.5s;
 	}
 
-	.d1:hover{
+	.fortransition li a:hover{
 		font-size: 3.5em;
 	}
+
+						/*--------------------------
+						----------ANIMATION---------
+						--------------------------*/
+
+		@keyframes anim2{
+		from{
+			margin-left: 800px;
+			letter-spacing: 1em;
+		}
+					
+		to{
+			margin-left: 100px;
+			letter-spacing: 0;
+		}
+	}
+					
+
+
+	.animerouge{
+		animation-name: rougegauche;
+		animation-duration: 1.6s;
+		animation-timing-function: ease-out;
+	}
+
+	@keyframes rougegauche{
+		from{
+			margin-left: 150px;
+		}
+
+		to{
+			margin-left: 0px;
+		}
+	}
+
+	.animejaune{
+		animation-name: jaunegauche;
+		animation-duration: 1.7s;
+		animation-timing-function: ease-out;
+	}
+
+	@keyframes jaunegauche{
+		from{
+			margin-left: 300px;
+		}
+
+		to{
+			margin-left: 0px;
+		}
+	}
+
+	.animevert{
+		animation-name: vertgauche;
+		animation-duration: 1.8s;
+		animation-timing-function: ease-out;
+	}
+
+	@keyframes vertgauche{
+		from{
+			margin-left: 450px;
+		}
+
+		to{
+			margin-left: 0px;
+		}
+	}
+
+	.animeorange{
+		animation-name: orangegauche;
+		animation-duration: 1.9s;
+		animation-timing-function: ease-out;
+	}
+
+	@keyframes orangegauche{
+		from{
+			margin-left: 600px;
+		}
+
+		to{
+			margin-left: 0px;
+		}
+	}
+
+	.animeviolet{
+		animation-name: violetgauche;
+		animation-duration: 2s;
+		animation-timing-function: ease-out;
+	}
+
+	@keyframes violetgauche{
+		from{
+			margin-left: 750px;
+		}
+
+		to{
+			margin-left: 0px;
+		}
+	}
+
+	.animeabout{
+		animation-name: aboutgauche;
+		animation-duration: 2.1s;
+		animation-timing-function: ease-out;
+		width: 500px;
+	}
+
+	@keyframes aboutgauche{
+		from{
+			margin-left: 900px;
+		}
+
+		to{
+			margin-left: 0px;
+		}
+	}
+	
 	
 }
 
